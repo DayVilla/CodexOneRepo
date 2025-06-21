@@ -13,6 +13,16 @@
         android:inputType="textEmailAddress"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginBottom="16dp"/>
+
     <!-- Password EditText -->
     <EditText
         android:id="@+id/passwordEditText"
@@ -20,7 +30,7 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         android:inputType="textPassword"
-        android:layout_below="@id/usernameEditText"
+        android:layout_below="@id/emailEditText"
         android:layout_marginBottom="16dp"/>
 
     <!-- Login Button -->
@@ -40,4 +50,14 @@
         android:textColor="#0000FF"
         android:layout_below="@id/loginButton"
         android:layout_marginTop="10dp"/>
+
+    <!-- Help Button -->
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp" />
 </RelativeLayout>
